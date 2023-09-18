@@ -1,0 +1,259 @@
+<mxfile host="app.diagrams.net" modified="2023-09-07T02:07:54.208Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="Y2Fd5Km8sPLdeZe0LRd3" version="21.7.2" type="device">
+  <diagram name="페이지-1" id="ZDOsRKhLVlpubBI3hGaW">
+    <mxGraphModel dx="2600" dy="1343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-1" value="&lt;h1&gt;&amp;nbsp; access app&lt;/h1&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; 1.&amp;nbsp;access_inout&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;()&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt; : 작업구역 출/입 확인&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;[&amp;nbsp;input ] image path(연결 캠 url 주소)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; [ output ] render access/workArea.html&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;2.&amp;nbsp;check_and_save_to_slack&lt;/b&gt;&lt;b style=&quot;background-color: initial; border-color: var(--border-color);&quot;&gt;()&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: 위험 지역 기준 인원 미달일 경우 slack 테이블에 데이터 저장&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; [ input ] check_nums() result&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; [ output ]&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;b&gt;1) check_nums()&lt;/b&gt; : 위험 구역 인원 파악&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; [ input ]&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; [ output ] return 구역별 현재 인원, 미달 인원 정보&lt;br&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="560" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-2" value="" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=1;fillColor=none;dashed=1;dashPattern=12 12;" vertex="1" parent="1">
+          <mxGeometry x="310" y="585" width="255" height="805" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-3" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-4" target="R2DmoGkuQtfUYxjYIdEO-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-4" value="Start" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;arcSize=50;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="405" y="430" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-12" target="R2DmoGkuQtfUYxjYIdEO-6">
+          <mxGeometry x="0.2226" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="555" y="655" />
+              <mxPoint x="555" y="655" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-6" value="render 에러페이지" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="675" y="635" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-7" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-13" target="R2DmoGkuQtfUYxjYIdEO-19">
+          <mxGeometry x="0.2308" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="511" y="1020" as="sourcePoint" />
+            <mxPoint x="576" y="1020" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-8" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="500" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-9" value="" style="verticalLabelPosition=bottom;verticalAlign=middle;html=1;shape=hexagon;perimeter=hexagonPerimeter2;arcSize=6;size=0.13333333333333333;" vertex="1" parent="R2DmoGkuQtfUYxjYIdEO-8">
+          <mxGeometry width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-10" value="IP_webcam 연결" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="R2DmoGkuQtfUYxjYIdEO-8">
+          <mxGeometry y="5" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-11" value="&lt;b&gt;반복&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="315" y="560.87" width="40" height="19.130434782608695" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-12" value="웹캠 연결이&lt;br&gt;잘 되었나?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="375" y="620" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-13" value="위험구역 테이블 안에&lt;br&gt;wid 기록이 있는가?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;container=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="980" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-14" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-47" target="R2DmoGkuQtfUYxjYIdEO-13">
+          <mxGeometry x="-1" y="63" relative="1" as="geometry">
+            <mxPoint x="-43" y="-60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-15" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-12" target="R2DmoGkuQtfUYxjYIdEO-16">
+          <mxGeometry x="-0.7778" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="575" y="1250" as="sourcePoint" />
+            <mxPoint x="575" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-16" value="wid = ocr_model.recognize" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="730" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-17" value="Access&lt;br&gt;table" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="125" y="990" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-17" target="R2DmoGkuQtfUYxjYIdEO-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="485" y="1020" as="sourcePoint" />
+            <mxPoint x="355" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-19" value="out_time 데이터가&lt;br&gt;있는가?" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1125" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-21" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="R2DmoGkuQtfUYxjYIdEO-44">
+          <mxGeometry x="0.1544" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="510" y="1020" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="605" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-24" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="R2DmoGkuQtfUYxjYIdEO-35" source="R2DmoGkuQtfUYxjYIdEO-19">
+          <mxGeometry x="-0.25" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="505" y="1164.5700000000002" as="sourcePoint" />
+            <mxPoint x="605" y="1165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-31" value="&lt;h1&gt;1. access_inout 알고리즘&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-35" value="현재 시간과 in_time 시간&lt;br&gt;차이가 1분 미만인가?" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1260" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-36" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-35" target="R2DmoGkuQtfUYxjYIdEO-37">
+          <mxGeometry x="-0.6364" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="385" y="1479.44" as="sourcePoint" />
+            <mxPoint x="460" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-37" value="render access 페이지 - 들어온 지 1분 미만" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1450" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-38" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-35" target="R2DmoGkuQtfUYxjYIdEO-39">
+          <mxGeometry x="0.1765" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="679.44" y="1205" as="sourcePoint" />
+            <mxPoint x="680" y="1250" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-39" value="Access&lt;br&gt;table" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="675" y="1270" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-40" value="Access 테이블에 out_time 데이터 입력&lt;br&gt;render access 페이지 - out time 출력" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="595" y="1339" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-41" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;entryX=1;entryY=0.333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-19" target="R2DmoGkuQtfUYxjYIdEO-42">
+          <mxGeometry x="0.2222" y="-15" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+            <mxPoint x="281.47" y="1215" as="sourcePoint" />
+            <mxPoint x="225" y="1165" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-42" value="Access&lt;br&gt;table" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1145" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-43" value="Access 테이블에 in_time 데이터 입력&lt;br&gt;render access 페이지 - in time 출력" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1215" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-44" value="Access&lt;br&gt;table" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="675" y="990" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-45" value="Access 테이블에 in_time 데이터 입력&lt;br&gt;render access 페이지 - in time 출력" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="585" y="1060" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-48" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-16" target="R2DmoGkuQtfUYxjYIdEO-47">
+          <mxGeometry x="-1" y="63" relative="1" as="geometry">
+            <mxPoint x="-43" y="-60" as="offset" />
+            <mxPoint x="435" y="770" as="sourcePoint" />
+            <mxPoint x="435" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-47" value="작업자 테이블에&lt;br&gt;wid가 존재하는가?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;container=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="360" y="830" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-49" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="445" y="950" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-50" value="Workers&lt;br&gt;table" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="130" y="840" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="870" as="sourcePoint" />
+            <mxPoint x="365" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-52" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="1" target="R2DmoGkuQtfUYxjYIdEO-53">
+          <mxGeometry x="0.1515" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="570" y="870" />
+              <mxPoint x="570" y="870" />
+            </Array>
+            <mxPoint x="510" y="870" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-53" value="render access 페이지 - 존재하지 않는 작업자 아이디" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="675" y="850" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-92" value="&lt;h1&gt;2. check_and_save_to_slack 알고리즘&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="370" width="620" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-93" value="" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=1;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="520" width="505" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-94" value="check_nums()" style="rounded=0;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="480" width="505" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-105" value="&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;SELECT &lt;/font&gt;p_id,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;task_location &lt;font color=&quot;#6666ff&quot;&gt;AS &lt;/font&gt;구역_위치,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;위험도,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;p_num &lt;font color=&quot;#6666ff&quot;&gt;AS &lt;/font&gt;기준_인원,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;font color=&quot;#6666ff&quot;&gt;COUNT&lt;/font&gt;(access) &lt;font color=&quot;#6666ff&quot;&gt;AS &lt;/font&gt;현재_인원수,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;font color=&quot;#6666ff&quot;&gt;CASE&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;font color=&quot;#6666ff&quot;&gt;WHEN COUNT&lt;/font&gt;(access) &amp;lt;= p_num &lt;font color=&quot;#6666ff&quot;&gt;THEN &lt;/font&gt;p_num - &lt;font color=&quot;#6666ff&quot;&gt;COUNT&lt;/font&gt;(access)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;font color=&quot;#6666ff&quot;&gt;ELSE&lt;/font&gt; 0&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;font color=&quot;#6666ff&quot;&gt;END AS&lt;/font&gt; 미달_인원&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;FROM &lt;/font&gt;Place&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;LEFT JOIN&lt;/font&gt; Access &lt;font color=&quot;#0000ff&quot;&gt;ON &lt;/font&gt;Place.p_id = Access.p_id&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;WHERE &lt;/font&gt;Access.out_time &lt;font color=&quot;#6666ff&quot;&gt;IS NULL AND DATE&lt;/font&gt;(Access.in_time) = &lt;font color=&quot;#6666ff&quot;&gt;CURDATE()&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;GROUP BY&lt;/font&gt; p_id&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;ORDER BY&lt;/font&gt; p_id;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;align=left;spacingLeft=20;spacingRight=0;spacingTop=16;" vertex="1" parent="1">
+          <mxGeometry x="1122.5" y="630" width="450" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-106" value="Access&lt;br&gt;table" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="540.44" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-107" value="Place&lt;br&gt;table" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="540.44" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-108" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-106" target="R2DmoGkuQtfUYxjYIdEO-107">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1060" y="620" as="sourcePoint" />
+            <mxPoint x="1110" y="570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1350" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-105" target="R2DmoGkuQtfUYxjYIdEO-110">
+          <mxGeometry x="0.1515" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+            <mxPoint x="1347.5" y="870" as="sourcePoint" />
+            <mxPoint x="1348" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-110" value="구역 현재 인원수가 1명 이상,&lt;br&gt;미달 인원이 0명 이상인가?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;container=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1243.75" y="940" width="207.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-112" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="1">
+          <mxGeometry x="0.1544" y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1451.25" y="979.33" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1540" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-113" value="이상없음" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="960" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-114" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="R2DmoGkuQtfUYxjYIdEO-110">
+          <mxGeometry x="0.0127" y="22" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="1230" y="1118.33" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="1348" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-115" value="Slack 테이블에 데이터 저장 &amp;amp; Slack 채널에 경고 메시지 전송" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1165.51" y="1165" width="363.98" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-116" value="Slack&lt;br&gt;table" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=middle;align=center;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1317.5" y="1095" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-117" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 14px;&quot;&gt;runapscheduler - 1분마다 실행&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="440" width="215" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R2DmoGkuQtfUYxjYIdEO-118" value="" style="shape=link;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="1010" y="390" as="sourcePoint" />
+            <mxPoint x="1010" y="1497.142857142857" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
